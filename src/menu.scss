@@ -24,10 +24,24 @@
     color: $--color-text-secondary;
   }
 
+  .circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: $--menu-item-circle;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    margin-left: -12px;
+  }
+
   &:hover,
   &:focus {
     outline: none;
-    background-color: $--menu-item-backend;
+    // background-color: $--menu-item-backend;
+    .circle {
+      background: $--color-primary;
+    }
   }
 
   @include when(disabled) {
