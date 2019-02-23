@@ -49,6 +49,11 @@
     cursor: not-allowed;
     background: none !important;
   }
+  @include when(active) {
+    .circle {
+      background: $--color-white;
+    }
+  }
 }
 
 @include b(menu) {
