@@ -76,7 +76,7 @@ $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
 
 /* Fill
 -------------------------- */
-$--fill-base: $--color-white !default;
+$--fill-base: #242536 !default;
 
 /* Font
 -------------------------- */
@@ -598,9 +598,10 @@ $--steps-padding: 20px !default;
 /* Menu
 --------------------------*/
 $--menu-item-font-size: $--font-size-base !default;
-$--menu-item-color: $--color-text-primary !default;
+$--menu-item-color: $--color-white !default;
 $--menu-item-fill: $--color-white !default;
-$--menu-item-hover-fill: $--color-primary-light-9 !default;
+$--menu-item-hover-fill: #242536 !default;
+$--menu-item-backend: #151524 !default;
 
 /* Rate
 --------------------------*/
