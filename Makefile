@@ -26,46 +26,12 @@ dev:
 	 -w /opt/$(SERVICE) \
 	 $(DEV_UI_IMAGE) bash
 
-image:
-	docker build -t $(IMG_HUB)/$(SERVICE):latest .
-
 build: prod
 
-prod: clean env
+prod:
 	npm run build
 
-build-in-docker:
-	-@docker rm -f $(SERVICE)-building
-	@docker run --rm \
-	 --name $(SERVICE)-building \
-	 -v $(PWD):/opt/$(SERVICE) \
-	 -w /opt/$(SERVICE) \
-	 $(DEV_UI_IMAGE) make build
+push: build publish
 
-push: build-in-docker sync push-simple
-
-build-simple:
-	docker build -t ${IMAGE} -f Dockerfile.simple .
-
-push-simple: build-simple
-	docker push ${IMAGE}
-
-build-prod-in-docker:
-	@docker run --rm \
-	 --name $(SERVICE)-prod-building \
-	 -v $(PWD):/opt/$(SERVICE) \
-	 -w /opt/$(SERVICE) \
-	 $(DEV_UI_IMAGE) make prod
-
-push-prod: build-prod-in-docker sync push-simple
-	echo "push ${RELEASE_BRANCH} successful."
-
-prod-image:
-	docker build -t $(IMG_HUB)/$(SERVICE):$(VERSION) .
-
-prod-push: prod-image
-	docker push $(IMG_HUB)/$(SERVICE):$(VERSION)
-
-clean: 
-	-rm -rf .tmp
-	-rm -rf dist
+publish:
+	npm publish
