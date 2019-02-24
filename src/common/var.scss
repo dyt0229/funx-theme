@@ -138,7 +138,7 @@ $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 $--checkbox-checked-text-color: $--color-primary !default;
 $--checkbox-checked-input-border-color: $--color-primary !default;
 $--checkbox-checked-input-fill: $--color-primary !default;
-$--checkbox-checked-icon-color: $--fill-base !default;
+$--checkbox-checked-icon-color: $--color-white !default;
 
 $--checkbox-input-border-color-hover: $--color-primary !default;
 
@@ -401,8 +401,8 @@ $--tab-vertical-header-count-fill: $--color-text-secondary !default;
 $--button-font-size: 14px !default;
 $--button-font-weight: $--font-weight-primary !default;
 $--button-border-radius: $--border-radius-base !default;
-$--button-padding-vertical: 12px !default;
-$--button-padding-horizontal: 20px !default;
+$--button-padding-vertical: 8px !default;
+$--button-padding-horizontal: 24px !default;
 
 $--button-medium-font-size: 14px !default;
 $--button-medium-border-radius: $--border-radius-base !default;
