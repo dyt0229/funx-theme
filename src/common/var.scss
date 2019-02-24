@@ -25,6 +25,9 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 
+$--color-primary-dark: #151524 !default;
+$--color-primary-dark-1: #242536 !default;
+
 $--color-success: #01C4C0 !default;
 $--color-warning: #F1AD4E !default;
 $--color-danger: #D65F5D !default;
@@ -44,6 +47,8 @@ $--color-text-primary: #00AD94 !default;
 $--color-text-regular: #606266 !default;
 $--color-text-secondary: #909399 !default;
 $--color-text-placeholder: #c0c4cc !default;
+
+$--color-backend-primary: $--color-primary-dark !default;
 
 /* Link
 -------------------------- */
@@ -76,7 +81,7 @@ $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
 
 /* Fill
 -------------------------- */
-$--fill-base: #242536 !default;
+$--fill-base: $--color-primary-dark-1 !default;
 
 /* Font
 -------------------------- */
@@ -216,7 +221,7 @@ $--select-font-size: $--font-size-base !default;
 $--select-close-hover-color: $--color-text-secondary !default;
 
 $--select-input-color: $--color-text-placeholder !default;
-$--select-multiple-input-color: #666 !default;
+$--select-multiple-input-color: $--color-text-placeholder !default;
 $--select-input-focus-background: $--color-primary !default;
 $--select-input-font-size: 14px !default;
 
@@ -224,7 +229,7 @@ $--select-option-color: $--color-text-regular !default;
 $--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
 $--select-option-height: 34px !default;
-$--select-option-hover-background: $--background-color-base !default;
+$--select-option-hover-background: $--color-primary-dark-1 !default;
 $--select-option-selected: $--color-primary !default;
 $--select-option-selected-hover: $--background-color-base !default;
 
@@ -232,9 +237,9 @@ $--select-group-color: $--color-info !default;
 $--select-group-height: 30px !default;
 $--select-group-font-size: 12px !default;
 
-$--select-dropdown-background: $--color-white !default;
+$--select-dropdown-background: $--color-backend-primary !default;
 $--select-dropdown-shadow: $--box-shadow-light !default;
-$--select-dropdown-empty-color: #999 !default;
+$--select-dropdown-empty-color: $--color-text-regular !default;
 $--select-dropdown-max-height: 274px !default;
 $--select-dropdown-padding: 6px 0 !default;
 $--select-dropdown-empty-padding: 10px 0 !default;
@@ -600,8 +605,8 @@ $--steps-padding: 20px !default;
 $--menu-item-font-size: $--font-size-base !default;
 $--menu-item-color: $--color-white !default;
 $--menu-item-fill: $--color-white !default;
-$--menu-item-hover-fill: #242536 !default;
-$--menu-item-backend: #151524 !default;
+$--menu-item-hover-fill: $--color-primary-dark-1 !default;
+$--menu-item-backend: $--color-backend-primary !default;
 $--menu-item-circle: #a1a1a7 !default;
 
 /* Rate

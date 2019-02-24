@@ -27,6 +27,7 @@
     cursor: pointer;
     padding-right: 35px;
     background-color: $--fill-base;
+    color: $--color-white;
 
     &:focus {
       border-color: $--select-input-focus-background;
