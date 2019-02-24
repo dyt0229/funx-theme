@@ -12,10 +12,13 @@
   .el-input,
   .el-input__inner {
     cursor: pointer;
+    background-color: $--color-backend-primary;
+    color: $--color-white;
   }
 
   .el-input.is-focus .el-input__inner {
     border-color: $--input-focus-border;
+    color: $--color-white;
   }
 
   .el-input__icon {
