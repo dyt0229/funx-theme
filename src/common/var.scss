@@ -27,6 +27,8 @@ $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /
 
 $--color-primary-dark: #151524 !default;
 $--color-primary-dark-1: #242536 !default;
+$--color-primary-dark-2: #3e5265 !default;
+
 
 $--color-success: #01C4C0 !default;
 $--color-warning: #F1AD4E !default;
@@ -361,10 +363,10 @@ $--cascader-menu-radius: $--border-radius-base !default;
 $--cascader-menu-border: $--border-base !default;
 $--cascader-menu-border-color: $--border-color-base !default;
 $--cascader-menu-border-width: $--border-width-base !default;
-$--cascader-menu-color: $--color-text-regular !default;
+$--cascader-menu-color: $--color-white !default;
 $--cascader-menu-option-color-active: $--color-text-secondary !default;
 $--cascader-menu-option-fill-active: rgba($--color-text-secondary, 0.12) !default;
-$--cascader-menu-option-color-hover: $--color-text-regular !default;
+$--cascader-menu-option-color-hover: $--color-white !default;
 $--cascader-menu-option-fill-hover: rgba($--color-text-primary, 0.06) !default;
 $--cascader-menu-option-color-disabled: #999 !default;
 $--cascader-menu-option-fill-disabled: rgba($--color-black, 0.06) !default;

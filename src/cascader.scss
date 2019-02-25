@@ -12,12 +12,14 @@
   .el-input,
   .el-input__inner {
     cursor: pointer;
-    background-color: $--color-backend-primary;
+    background-color: $--color-primary-dark-2;
     color: $--color-white;
+    border:0px;
+    border-radius: 3px 3px 3px 3px; 
   }
 
   .el-input.is-focus .el-input__inner {
-    border-color: $--input-focus-border;
+    /*border-color: $--input-focus-border;*/
     color: $--color-white;
   }
 
@@ -84,12 +86,20 @@
     line-height: #{$--input-mini-height};
   }
 
-  @include when(disabled) {
+ /* @include when(disabled) {
     .el-cascader__label {
       z-index: #{$--index-normal + 1};
-      color: $--disabled-color-base;
+      color: $--color-white;
     }
+  }*/
+  .el-cascader__label {
+      z-index: #{$--index-normal + 1};
+      color: $--color-white;
+      span{
+        color: $--color-white;
+      }
   }
+
 }
 
 @include b(cascader-menus) {
@@ -109,7 +119,7 @@
   height: 204px;
   overflow: auto;
   border-right: $--select-dropdown-border;
-  background-color: $--select-dropdown-background;
+  background-color: $--color-primary-dark-2;
   box-sizing: border-box;
   margin: 0;
   padding: 6px 0;
@@ -183,6 +193,10 @@
 
     .el-cascader-menu__item {
       overflow: visible;
+      color: #ffffff;
     }
+  }
+  .el-cascader-menu__item{
+    color:$--color-white;
   }
 }
